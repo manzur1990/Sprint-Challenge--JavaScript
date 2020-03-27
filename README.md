@@ -30,13 +30,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+<!-- A:  Map() receives a function as a parameter. Then it applies it on each element and returns an entirely new array populated with the results of calling the provided function.
+With map () you can chain other methods which means that you can attach  filter(), reduce(), rt().  
+In the case of forEach(),  you cant do it because it returns undefined. -->
+
 2. What is the difference between a function and a method?
+
+    <!-- A: A function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed. A method is a piece of code that is called by a name that is associated with an object. -->
 
 3. What is closure?
 
+    <!-- A: because the concept of a closures is a combination of functions bundled together (enclosed) and within that enviroement, you have access to our functions's scope from an inner function. Variables can reference each other beyond their scope with the utalization of "let", "const" and "var".
+
+ <!-- Global{
+   outer{
+     inner
+   }
+ } --> 
+
+
 4. Describe the four rules of the 'this' keyword.
 
+    <!-- A:
+    I. Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+    II. Whenever a function is called by a preceding dot, the object before that dot is this.
+    III. Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+    IV. Whenever JavaScript’s call or apply method is used, this is explicitly defined. -->
+
 5. Why do we need super() in an extended class?
+
+    <!-- A:The super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods.  -->
 
 ## Project Set up
 
